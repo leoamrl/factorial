@@ -1,0 +1,43 @@
+html {
+  font-family: $main-font;
+  font-size: 62.5%;
+  color: #524195;
+}
+body {
+  font-size: 1.4rem;
+  
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $main-font;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1em;
+}
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+p {
+  font-family: $main-font;
+  line-height: 140%;
+  font-size: 1.4rem;
+}
+
+.section {
+  overflow: hidden;
+}
