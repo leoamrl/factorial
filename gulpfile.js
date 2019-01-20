@@ -2,7 +2,7 @@ var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		concat = require('gulp-concat'),
 		minify = require('gulp-minify'),
-		htmlmin = require('gulp-htmlmin'),
+		// htmlmin = require('gulp-htmlmin'),
 		connect = require('gulp-connect'),
     prefix = require('gulp-autoprefixer'),
 		minifycss = require('gulp-minify-css'),
@@ -68,11 +68,11 @@ gulp.task('sprite', function () {
 
 /*******MINIFYHTML***********/
 
-gulp.task('html', () => {
-  return gulp.src('src/*.html')
-		.pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('dist'));
-});
+// gulp.task('html', () => {
+//   return gulp.src('src/*.html')
+// 		.pipe(htmlmin({ collapseWhitespace: true }))
+//     .pipe(gulp.dest('dist'));
+// });
 
 /*******WATCH***********/
 
@@ -83,4 +83,4 @@ gulp.task('watch', function() {
 
 /*******DEFAULT***********/
 
-gulp.task('default', ['connectDist','css','html','js','concatcss','sprite','watch']);
+gulp.task('default', ['connectDist','css','js','concatcss','sprite','watch']);

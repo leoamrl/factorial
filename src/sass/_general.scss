@@ -1,14 +1,14 @@
 html {
-  font-family: $main-font;
+  font-family: $fontRegular;
   font-size: 62.5%;
-  color: #524195;
+  color: #fff;
 }
 body {
   font-size: 1.4rem;
-  
+  background: #080808;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: $main-font;
+	font-family: $fontBold;
 }
 h1 {
   font-size: 2em;
@@ -33,7 +33,7 @@ a, a:hover, a:active, a:visited {
 	color: inherit;
 }
 p {
-  font-family: $main-font;
+  font-family: $fontRegular;
   line-height: 140%;
   font-size: 1.4rem;
 }
