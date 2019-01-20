@@ -571,8 +571,15 @@ p {
       font-size: 4.5rem; } }
 
 @media (min-width: 992px) {
+  .main {
+    padding: 0; }
+    .main__info {
+      font-size: 7rem; } }
+
+@media (min-width: 1200px) {
   .main__info {
-    font-size: 7rem; } }
+    padding: 0;
+    max-width: 1200px; } }
 
 /* ---
 	- work

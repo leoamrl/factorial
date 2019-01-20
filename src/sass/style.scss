@@ -232,8 +232,22 @@
 @media (min-width: 992px) {
 
 .main {
+	padding: 0;
 	&__info {
 		font-size: 7rem;
+	}
+}
+
+}
+
+// ******** DESKTOP
+
+@media (min-width: 1200px) {
+
+.main {
+	&__info {
+		padding: 0;
+		max-width: 1200px;
 	}
 }
 
