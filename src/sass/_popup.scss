@@ -1,0 +1,74 @@
+.popup {
+	position: fixed;
+	display: none;
+	top: 0; left: 0;
+	padding: 20px;
+	width: 100vw; height: 100vh;
+	z-index: 10;
+
+	&__background {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%; height: 100vh;
+		background: rgba($color: #000000, $alpha: .6);
+		z-index: 9;
+	}
+	&__image {
+		margin-right: 20px;
+	}
+	&__close {
+		position: absolute;
+		top: -20px; right: -20px;
+		width: 40px; height: 40px;
+		border-radius: 50px;
+		background: $main-purple;
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%; left: 50%;
+			width: 20px; height: 3px;
+			background: #ffffff;
+		}
+		&::before {
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+		&::after {
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+		&:hover {
+			background: $main-purple;
+		}
+	}
+	&__content {
+		display: flex;
+		width: calc(100% - 40px);
+		max-width: 450px;
+		padding: 20px;
+		position: absolute;
+		top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+		background: #fff;
+	}
+	&.active {
+		display: initial;
+	}
+	&__text {
+		font-weight: 700;
+		font-size: 2rem;
+	}
+}
+
+// popup medium
+
+@media (min-width: 992px) {
+
+.popup {
+	&__content {
+		padding: 40px;
+	}
+}
+
+}
